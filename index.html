@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN UI</title>
+
+    <link href="./css/bootswatch.min.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+</head>
+<body id="body_container">
+   	<div class="wrapper swipeArea">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="#"><h4>ADMIN PAGE</h4></a>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Main Menu</p>
+                    <li>
+                        <a href="#users" data-toggle="tab" aria-expanded="false" id="about-nav" class="active">Users</a>
+                    </li>
+                    <li>
+                        <a href="#roles" data-toggle="tab" aria-expanded="false" id="about-nav">Roles</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled">
+                    <li><center>© Gentlemanoi 2018</center></li>
+                </ul>
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-danger navbar-btn">
+                                <i class="glyphicon glyphicon-th"></i>
+                            </button>
+
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#settingsNavbar">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="settingsNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Hi User!</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- MAIN BODY HERE -->
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <div id="myTabContent" class="col-md-12 tab-content">
+                            <div class="tab-pane fade active in" id="users">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>USERS</h4>
+                                            <label>This is sample list of users.</label>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <a href="#" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span> add user</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="row col-md-12 table-responsive">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Firstname</th>
+                                                <th>Lastname</th>
+                                                <th>Gender</th>
+                                                <th>Birthdate</th>
+                                                <th>Country</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>Male</td>
+                                                <td>December 1, 1990</td>
+                                                <td>USA</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jane</td>
+                                                <td>Smith</td>
+                                                <td>Female</td>
+                                                <td>December 24, 1989</td>
+                                                <td>Canada</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Susan</td>
+                                                <td>Pilar</td>
+                                                <td>Female</td>
+                                                <td>February 1, 1987</td>
+                                                <td>Philippines</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Hovy</td>
+                                                <td>Green</td>
+                                                <td>Female</td>
+                                                <td>March 11, 1987</td>
+                                                <td>USA</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Chou</td>
+                                                <td>Kang</td>
+                                                <td>Male</td>
+                                                <td>June 18, 1990</td>
+                                                <td>China</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <ul class="pagination">
+                                          <li class="active"><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">4</a></li>
+                                          <li><a href="#">5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade in" id="roles">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Roles</h4>
+                                            <label>This is sample list of roles.</label>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <a href="#" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span> add role</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="row col-md-12 table-responsive">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Added by</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Administrator</td>
+                                                <td>This is an administrator</td>
+                                                <td>John</td>
+                                                <td>Active</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Anonymous User</td>
+                                                <td>This is an anonymous user</td>
+                                                <td>Susan</td>
+                                                <td>Active</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Technical User</td>
+                                                <td>This is a technical user</td>
+                                                <td>Chou</td>
+                                                <td>Active</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> delete</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <ul class="pagination">
+                                          <li class="active"><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.mCustomScrollable.min.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/jquery.touchSwipe.min.js"></script>
+   	<script type="text/javascript">
+        $(document).ready(function(){            
+            $('.swipeArea').swipe({
+                swipeStatus:function(event,phase,direction,distance,duration,fingers){
+                    if($(window).width() <= 768){
+                        if(phase=="move" && direction=="right"){
+                            $('#sidebar').addClass('active');
+                            $('#content').addClass('active');
+                            return false;
+                        }
+
+                        if(phase=="move" && direction=="left"){
+                            $('#sidebar').removeClass('active');
+                            $('#content').removeClass('active');
+                            return false;           
+                        }
+                    }
+                },
+                excludedElements: "label,button,input,select,textarea"
+            });
+        });
+    </script>
+</body>
+</html>
